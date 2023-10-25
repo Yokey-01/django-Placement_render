@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .highlighted-text {
+            font-size: 48px;
+            color: #ff5733;
+            font-weight: bolder;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #555;
+        }
+        .btn {
+            margin-left: 35%;
+            padding: 10px 20px;
+            color: white;
+            background-color: orange;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight: bolder;
+            cursor: pointer;
+            width: 100%;
+  
+        }
+        .btn:hover {
+            color: orange;
+            background-color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Your result.</h1>
+        <p class="highlighted-text">{{result2}}</p>
+        <p class="description">To know more details and inportance of placement.</p>
+        <form action="home/">
+            <button class="btn" type="submit">Click Here </button>
+        </form>
+    </div>
+</body>
+</html>

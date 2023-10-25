@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+	<meta charset="UTF=8">
+	<title> Prediction page</title>
+	<link rel="shortcut icon" type="x-icon" href="https://i.ibb.co/VH7qsyW/Google-Chrome-icon-February-2022-svg.png">
+	<style>
+		* {
+			border-collapse: separate;
+		}
+		body{
+			background-color: black;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.main {
+			position: absolute;
+			top: 130px;
+			right: 15%;
+			width: 600px;
+			background-color: rgb(96, 156, 156);
+			border-radius: 15px;
+			align-items: center;
+			height: 72vh;
+			border: 1.5px solid blue;
+
+		}
+
+		.menu-bar .table {
+			margin-left: -150px;
+
+		}
+
+		h1 {
+			font-family: Times New Roman;
+			margin: 20px, 0;
+			color: rgb(18, 17, 17);
+			font-size: 30px;
+			font-weight: lighter;
+			animation-delay: 3.5s;
+			font-style: italic;
+		}
+
+		input[type=submit] {
+			background-color: rgb(127, 216, 131);
+			border: 1px solid black;
+			color: rgb(23, 22, 22);
+			padding: 10px 16px;
+			cursor: pointer;
+			margin-top: 15px;
+			border-radius: 10px;
+		}
+
+		input {
+			padding: 20px, 0;
+			margin: 20px, 0;
+		}
+
+		input:hover {
+			color: rgb(127, 216, 131);
+			background-color: rgb(23, 22, 22);
+			;
+		}
+
+		p {
+			color: #ffffff;
+		}
+
+		.row em {
+			color: red;
+			font-weight: bolder;
+			font-style: italic;
+			margin-bottom: 20%;
+		}
+
+		.main .bold {
+			font-style: italic;
+			margin-top: 30px;
+		}
+		
+		.wrapper .predict {
+			font-weight: bold;
+            margin-top:0%;
+
+		}
+		.logo .title {
+			font-size: 20px;
+			margin-left: 0%;
+            color:rgb(95, 126, 96);
+			margin-top: 200px;
+			font-weight: bold;
+
+		}
+		.gfg {
+			color: rgb(24, 18, 11);
+			font-weight: bold;
+		}
+
+		.bold {
+			font-size: 17px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body style="background-color: rgb(12, 11, 11);">
+	<div class="wrapper">
+		<div class="top-bar">
+			<div class="logo">
+				<br><br><br> <br><br><br><br><br>
+				<span class="title"><strong> NOTE :- </strong> Gender</span><br>
+				<span class="title"> Male: 0</span><br>
+				<span class="title"> Female: 1</span><br></br>
+				<br>
+				<span class="title"><strong>NOTE :- </strong> Stream</span><br>
+                <span class="title"> Artificial Intelligence and Data: 0</span><br>
+				<span class="title"> Electrical And SCommunication: 1</span><br>
+				<span class="title"> Computer Science: 2</span><br>
+				<span class="title"> Information Technology: 3</span><br>
+				<span class="title"> Mechanical: 4</span><br>
+				<span class="title"> Electrical: 5</span><br>
+				<span class="title"> Civil: 6</span><br> </br> <br>
+				<span class="title"> <strong> NOTE 1 :-</strong> </span><br>
+				<span class="title">Live in Hostel: 1</span><br>
+				<span class="title">Not Live in Hostel: 0</span><br>
+			</div>
+			<div class="menu-bar">
+			</div>
+		</div>
+		<p><em>WELCOME TO THE PREDICT PAGE</em></P>
+		<div align='center' class="main">
+			<h1 class="gfg"></h1>
+			<h1>It's just a prediction; work hard ,success will be yours!!!.</h1> <br />
+			<form action="result">
+				<table>
+					<tr>
+						<td align="right"><span class="bold">Age:</span></td>
+						<td align="left"><input type="text" name="n1"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Gender:</span></td>
+						<td align="left"><input type="text" name="n2"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Stream:</span></td>
+						<td align="left"><input type="text" name="n3"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Internships:</span></td>
+						<td align="left"><input type="text" name="n4"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">CGPA:</span></td>
+						<td align="left"><input type="text" name="n5"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Hostel:</span></td>
+						<td align="left"><input type="text" name="n6"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Histroy Of Backlog:</span></td>
+						<td align="left"><input type="text" name="n7"></td>
+					</tr>
+				</table>
+				<br>
+				<input href='output/' class="predict" type="submit" value="PREDICT">
+				<!-- <div class="row">
+					<h2><em>{{result2}}</em></h2>
+				</div> -->
+			</form>
+		</div>
+	</div>
+</body>
+</html>

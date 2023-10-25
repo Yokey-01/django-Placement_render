@@ -1,0 +1,26 @@
+<h1>STUDENT DETAILS</h1>
+<table border="1">
+<tr>
+    <th>S.no</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Stream</th>
+    <th>Internships</th>
+    <th>CGPA</th>
+    <th>Hostel</th>
+    <th>History of Blocklogs</th>
+</tr>
+
+{% for i in s %}
+<tr>
+<td>{{i.id}}</td>
+<td>{{i.age}}</td>
+<td>{{i.gender}}</td>
+<td>{{i.stream}}</td>
+<td>{{i.internships}}</td>
+<td>{{i.cgpa}}</td>
+<td>{{i.hostel}}</td>
+<td>{{i.historyofbacklog}}</td>
+</tr>
+{% endfor %}
+</table>

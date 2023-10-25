@@ -1,0 +1,7 @@
+Django==2.2
+gunicorn==20.0.4
+Pillow
+Scikit-learn
+pandas
+numpy
+seaborn
